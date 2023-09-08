@@ -1,0 +1,156 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(192,192,218,1) 35%, rgba(240,243,244,1) 100%);
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: azure;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: azure;
+}
+
+a:hover, a:active{
+    text-decoration: underline;
+}
+
+nav h2{
+    color: rgb(173, 173, 210);
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        padding: 0.5rem;
+    }
+    nav h2{
+        justify-content: center;
+    }
+}
+
+.box-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: rgb(246, 246, 246);
+}
+
+#list-box{
+    width: 400px;
+    padding: 10px;
+    /* display: flex; */
+    margin: auto;
+    background-color: rgba(192,192,218,1);
+    border-radius: 10px;
+    border: 1px solid rgba(2,0,36,1); 
+}
+
+/* .box ul{
+    padding: 0px;
+}
+
+.box ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+} */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(229, 224, 246);
+    margin-top: 7px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.addTask{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.add{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 16px 50px;
+    background-color: rgb(2, 2, 64);
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.item {
+    height: 65px;
+    display: flex;
+    border-bottom: 1px solid #0801236e;
+    font-size: 20px;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+#checkbox{
+    width: 18px;
+}
+
+#checkbox:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #080123;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+.del{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;  
+    padding: 25px 18px 20px 20px;
+}
+
+footer p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
